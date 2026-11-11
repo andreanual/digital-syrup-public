@@ -1,4 +1,4 @@
-const state={lang:localStorage.getItem('ds_lang')==='es'?'es':'en'};
+const state={lang:localStorage.getItem('ds_lang')==='en'?'en':'es'};
 const translations={};
 function setLanguage(lang){state.lang=lang;document.documentElement.lang=lang;document.querySelectorAll('[data-en][data-es]').forEach(el=>{el.textContent=el.dataset[lang]});const btn=document.getElementById('currentLang');if(btn)btn.textContent=lang==='en'?'ES':'EN';localStorage.setItem('ds_lang',lang)}
 setLanguage(state.lang);
