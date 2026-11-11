@@ -2413,3 +2413,31 @@ footer p,.footer-bottom span,.footer-bottom a,.hero-foot,.small-art-label {
 @media(max-width:660px){.mix-showcase{padding:76px 0}.mix-heading{margin-bottom:28px}.mix-showcase .mix-heading h2{font-size:clamp(35px,10vw,51px)}.mix-showcase .mix-summary{font-size:18px}.mix-services-grid{grid-template-columns:1fr;gap:16px}.mix-service{min-height:365px;padding:24px 22px}.mix-card-art{height:94px}.mix-icon-svg{width:80px;height:80px}.mix-card-category{margin-bottom:18px}.mix-service h3{font-size:31px}.mix-card-divider{margin:17px auto}.mix-method{padding:17px 18px;gap:9px;font-size:16px}.mix-method strong{width:100%;text-align:center;font-size:24px}.mix-method-dot{display:none}}
 @media(prefers-reduced-motion:reduce){.mix-service{transition:none!important}}
 
+
+/* Three quote packages */
+.package-grid-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.package-grid-three .package{min-height:440px;display:flex;flex-direction:column;align-items:flex-start}
+.package-grid-three .package h3{font-size:clamp(29px,2.5vw,39px);line-height:1.12}
+.package-grid-three .package p{font-size:17px;line-height:1.65;max-width:34ch}
+.package-grid-three .package-cta{margin-top:auto;display:inline-flex;align-items:center;gap:9px;padding:13px 18px;border-radius:999px;background:var(--lime);color:var(--plum);font-weight:800;text-decoration:none}
+.package-grid-three .package-cta:hover{transform:translateY(-2px)}
+.contact-form-layout{display:grid;grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr);gap:56px;align-items:start}
+.contact-form-intro{position:sticky;top:120px}
+.contact-form-intro h2{font-family:var(--display);font-size:clamp(48px,5vw,76px);line-height:1.05;margin:22px 0}
+.contact-form-intro>p:not(.eyebrow){font-size:19px;line-height:1.65;max-width:34ch}
+.contact-form-intro .main-email{display:inline-block;margin-top:28px;color:var(--cream);font-weight:700}
+.contact-form-panel{background:var(--cream);color:var(--plum);padding:clamp(24px,4vw,48px);border-radius:28px;box-shadow:0 20px 55px #100a1a30}
+.lead-form{display:grid;gap:19px}
+.form-heading{margin-bottom:5px}
+.form-heading h3{font-family:var(--display);font-size:clamp(30px,3vw,42px);line-height:1.12;margin:10px 0 0}
+.lead-form>label:not(.form-consent){display:grid;gap:8px;font-family:var(--sans);font-size:14px;font-weight:700}
+.lead-form input:not([type=checkbox]),.lead-form select,.lead-form textarea{width:100%;min-height:50px;border:1px solid #c9bdd0;border-radius:12px;background:#fff;padding:13px 15px;color:var(--plum);font:500 15px var(--sans)}
+.lead-form textarea{min-height:120px;resize:vertical}
+.lead-form input:focus,.lead-form select:focus,.lead-form textarea:focus{outline:3px solid #cda8f566;border-color:#8758ab}
+.form-consent{display:flex;align-items:flex-start;gap:11px;font-size:13px;line-height:1.5}
+.form-consent input{width:18px;height:18px;flex:0 0 18px;margin-top:2px;accent-color:#8758ab}
+.form-submit{border:0;cursor:pointer;justify-content:center;width:100%}
+.form-privacy{font-size:12px;line-height:1.55;color:#685c70;margin:0}
+.form-honey{position:absolute!important;left:-5000px!important;width:1px!important;height:1px!important;opacity:0!important}
+@media(max-width:900px){.package-grid-three{grid-template-columns:1fr 1fr}.contact-form-layout{grid-template-columns:1fr;gap:30px}.contact-form-intro{position:static}.package-grid-three .package{min-height:360px}}
+@media(max-width:660px){.package-grid-three{grid-template-columns:1fr}.package-grid-three .package{min-height:0;padding:28px}.contact-form-layout{gap:24px}.contact-form-panel{padding:23px;border-radius:21px}}
