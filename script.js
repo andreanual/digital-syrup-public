@@ -8,3 +8,10 @@ menu?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu
 nav?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');menu?.setAttribute('aria-expanded','false')}));
 if('IntersectionObserver' in window){const obs=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');obs.unobserve(entry.target)}}),{threshold:.09});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el))}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'))}
 
+
+const serviceSelect=document.getElementById('lead-service');
+if(serviceSelect){
+  const requestedService=new URLSearchParams(window.location.search).get('service');
+  const serviceMap={agenda:'Llenar agendas',professional:'Clientes y servicios profesionales',ecommerce:'Productos de ecommerce'};
+  if(requestedService && serviceMap[requestedService]) serviceSelect.value=serviceMap[requestedService];
+}
