@@ -2441,3 +2441,28 @@ footer p,.footer-bottom span,.footer-bottom a,.hero-foot,.small-art-label {
 .form-honey{position:absolute!important;left:-5000px!important;width:1px!important;height:1px!important;opacity:0!important}
 @media(max-width:900px){.package-grid-three{grid-template-columns:1fr 1fr}.contact-form-layout{grid-template-columns:1fr;gap:30px}.contact-form-intro{position:static}.package-grid-three .package{min-height:360px}}
 @media(max-width:660px){.package-grid-three{grid-template-columns:1fr}.package-grid-three .package{min-height:0;padding:28px}.contact-form-layout{gap:24px}.contact-form-panel{padding:23px;border-radius:21px}}
+
+/* Growth & Analytics offer cards — centered editorial layout */
+.syrup-offers{padding-top:96px;padding-bottom:100px}
+.syrup-offers-heading{max-width:900px;margin-inline:auto;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px}
+.syrup-offers-heading>div{width:100%}
+.syrup-offers-heading .eyebrow{text-align:center}
+.syrup-offers-heading h2{text-align:center}
+.syrup-offers-heading>p{max-width:760px;text-align:center;margin:0 auto}
+.syrup-offers-grid{align-items:stretch;gap:22px;margin-top:38px}
+.syrup-offers-grid .syrup-offer{position:relative;isolation:isolate;overflow:hidden;min-height:570px;height:100%;padding:38px 30px 32px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;border:1px solid #d8ccdc;border-radius:30px;background:linear-gradient(155deg,#fffdf9 0%,#fff9f0 72%,#f6edfb 100%);box-shadow:0 15px 36px rgba(36,22,47,.07);transition:transform .25s ease,box-shadow .25s ease}
+.syrup-offers-grid .syrup-offer::before{content:"";position:absolute;z-index:-1;width:210px;height:210px;top:-120px;right:-70px;border-radius:50%;background:radial-gradient(circle,#cda8f5aa 0%,#cda8f500 70%)}
+.syrup-offers-grid .syrup-offer::after{content:"";position:absolute;z-index:-1;width:180px;height:180px;bottom:-120px;left:-70px;border-radius:50%;background:radial-gradient(circle,#c8fa5877 0%,#c8fa5800 70%)}
+.syrup-offers-grid .syrup-offer:hover{transform:translateY(-7px);box-shadow:0 24px 48px rgba(36,22,47,.13)}
+.syrup-offer .offer-icon{width:82px;height:82px;display:grid;place-items:center;border-radius:25px;background:linear-gradient(145deg,#f1e2ff,#d8b8f5);box-shadow:inset 0 2px 5px #fff,0 10px 24px #8f58b522;margin-bottom:22px}
+.syrup-offer:nth-child(2) .offer-icon{background:linear-gradient(145deg,#efffcf,#c8fa58)}
+.syrup-offer:nth-child(3) .offer-icon{background:linear-gradient(145deg,#ffe4ed,#f6bdcf)}
+.syrup-offer .offer-icon svg{width:43px;height:43px;fill:none;stroke:#24162f;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}
+.syrup-offer .offer-kicker{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:7px 15px;border-radius:999px;background:#c8fa58;color:#24162f;font:800 12px/1.2 var(--sans);letter-spacing:.07em;text-align:center;margin-bottom:21px}
+.syrup-offer h3{width:100%;max-width:17ch;margin:0 auto 20px;text-align:center;font-size:clamp(27px,2.2vw,36px);line-height:1.13;letter-spacing:-.025em}
+.syrup-offer>p{width:100%;max-width:36ch;margin:0 auto 28px;text-align:center;font-size:17px;line-height:1.7}
+.syrup-offer .package-cta{margin:auto auto 0;align-self:center;justify-content:center;min-height:58px;padding:15px 23px;text-align:center;white-space:normal;line-height:1.3;box-shadow:0 7px 18px #a7dc362b}
+.syrup-offer .package-cta span:last-child{font-size:20px}
+@media(max-width:900px){.syrup-offers-grid{grid-template-columns:1fr 1fr}.syrup-offers-grid .syrup-offer{min-height:540px}}
+@media(max-width:660px){.syrup-offers{padding-top:70px;padding-bottom:75px}.syrup-offers-grid{grid-template-columns:1fr;gap:17px;margin-top:28px}.syrup-offers-grid .syrup-offer{min-height:0;padding:31px 24px 27px}.syrup-offer h3{font-size:31px}.syrup-offer>p{font-size:16px}.syrup-offer .package-cta{margin-top:10px;width:100%}}
+@media(prefers-reduced-motion:reduce){.syrup-offers-grid .syrup-offer{transition:none}}
