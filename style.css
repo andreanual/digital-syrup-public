@@ -2472,3 +2472,14 @@ footer p,.footer-bottom span,.footer-bottom a,.hero-foot,.small-art-label {
 .syrup-offer .offer-copy p{margin:0 auto 16px;text-align:center;font-size:17px;line-height:1.7}
 .syrup-offer .offer-copy p:last-child{margin-bottom:0}
 @media(max-width:660px){.syrup-offer .offer-copy p{font-size:16px;line-height:1.65;margin-bottom:13px}}
+
+/* Calendly booking section */
+.calendly-shell{max-width:1120px}
+.calendly-intro{max-width:800px;margin:0 auto 38px;text-align:center}
+.calendly-intro .eyebrow{text-align:center}
+.calendly-intro h2{font-family:var(--display);font-size:clamp(45px,5vw,72px);line-height:1.06;margin:20px 0}
+.calendly-intro>p:not(.eyebrow){max-width:700px;margin:0 auto 20px;font-size:18px;line-height:1.7}
+.calendly-intro .main-email{display:inline-block;margin-top:12px;color:var(--cream);font-weight:700}
+.calendly-panel{overflow:hidden;background:#fff;border-radius:26px;padding:12px;box-shadow:0 22px 55px #100a1a38}
+.calendly-inline-widget{width:100%;min-width:320px;height:820px}
+@media(max-width:660px){.calendly-intro h2{font-size:clamp(39px,10vw,54px)}.calendly-intro>p:not(.eyebrow){font-size:16px}.calendly-panel{padding:0;border-radius:18px}.calendly-inline-widget{height:900px}}
