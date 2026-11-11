@@ -2466,3 +2466,9 @@ footer p,.footer-bottom span,.footer-bottom a,.hero-foot,.small-art-label {
 @media(max-width:900px){.syrup-offers-grid{grid-template-columns:1fr 1fr}.syrup-offers-grid .syrup-offer{min-height:540px}}
 @media(max-width:660px){.syrup-offers{padding-top:70px;padding-bottom:75px}.syrup-offers-grid{grid-template-columns:1fr;gap:17px;margin-top:28px}.syrup-offers-grid .syrup-offer{min-height:0;padding:31px 24px 27px}.syrup-offer h3{font-size:31px}.syrup-offer>p{font-size:16px}.syrup-offer .package-cta{margin-top:10px;width:100%}}
 @media(prefers-reduced-motion:reduce){.syrup-offers-grid .syrup-offer{transition:none}}
+
+/* Clear paragraph breaks inside Growth & Analytics offer cards */
+.syrup-offer .offer-copy{width:100%;max-width:36ch;margin:0 auto 28px;text-align:center}
+.syrup-offer .offer-copy p{margin:0 auto 16px;text-align:center;font-size:17px;line-height:1.7}
+.syrup-offer .offer-copy p:last-child{margin-bottom:0}
+@media(max-width:660px){.syrup-offer .offer-copy p{font-size:16px;line-height:1.65;margin-bottom:13px}}
