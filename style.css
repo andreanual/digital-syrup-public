@@ -2483,3 +2483,20 @@ footer p,.footer-bottom span,.footer-bottom a,.hero-foot,.small-art-label {
 .calendly-panel{overflow:hidden;background:#fff;border-radius:26px;padding:12px;box-shadow:0 22px 55px #100a1a38}
 .calendly-inline-widget{width:100%;min-width:320px;height:820px}
 @media(max-width:660px){.calendly-intro h2{font-size:clamp(39px,10vw,54px)}.calendly-intro>p:not(.eyebrow){font-size:16px}.calendly-panel{padding:0;border-radius:18px}.calendly-inline-widget{height:900px}}
+
+/* Contact + Calendly: integrated split layout on the plum canvas */
+.calendly-contact{position:relative;isolation:isolate;overflow:hidden;background:#24162f}
+.calendly-contact::before{content:"";position:absolute;z-index:-1;width:480px;height:480px;top:-180px;left:-180px;border-radius:50%;background:radial-gradient(circle,#a77bd42b 0%,#a77bd400 72%);pointer-events:none}
+.calendly-contact::after{content:"✳";position:absolute;z-index:-1;right:3.5%;bottom:7%;font-size:clamp(90px,14vw,190px);line-height:1;color:#c8fa581c;transform:rotate(-15deg);pointer-events:none}
+.calendly-shell{max-width:1440px;display:grid;grid-template-columns:minmax(280px,.78fr) minmax(520px,1.22fr);align-items:center;gap:clamp(36px,5vw,82px)}
+.calendly-intro{position:relative;max-width:540px;margin:0;text-align:left;justify-self:start}
+.calendly-intro::after{content:"";display:block;width:92px;height:5px;margin-top:34px;border-radius:99px;background:#c8fa58;box-shadow:28px 14px 0 -1px #c8fa5855}
+.calendly-intro .eyebrow{text-align:left}
+.calendly-intro h2{font-size:clamp(42px,4.4vw,68px);text-align:left}
+.calendly-intro>p:not(.eyebrow){max-width:490px;margin:0 0 20px;text-align:left}
+.calendly-intro .main-email{margin-top:18px}
+.calendly-panel{position:relative;min-width:0;width:100%;overflow:hidden;background:transparent;border:1px solid #ffffff20;border-radius:26px;padding:0;box-shadow:0 22px 60px #100a1a35}
+.calendly-panel::before{content:"";position:absolute;inset:12px;border:1px solid #c8fa5833;border-radius:18px;pointer-events:none;z-index:2}
+.calendly-inline-widget{width:100%;min-width:320px;height:820px;background:#24162f}
+@media(max-width:1000px){.calendly-shell{grid-template-columns:1fr;gap:34px}.calendly-intro{max-width:720px}.calendly-intro::after{margin-top:22px}.calendly-contact::after{right:4%;bottom:42%}}
+@media(max-width:660px){.calendly-shell{gap:25px}.calendly-intro h2{font-size:clamp(39px,10vw,54px)}.calendly-intro>p:not(.eyebrow){font-size:16px}.calendly-panel{padding:0;border-radius:18px}.calendly-panel::before{inset:7px;border-radius:13px}.calendly-inline-widget{height:900px}}
